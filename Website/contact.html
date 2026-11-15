@@ -104,36 +104,171 @@
           <p
             class="font-futura text-xl text-stone-600 font-medium tracking-wide mb-5"
           >
-            Subtitle
+            Een groot plan of een kleine vraag: je bent welkom.
           </p>
-          <form
-            class="flex flex-col gap-2 py-4 my-6 border border-stone-300 bg-gray-100 rounded-lg"
-          >
-            <label
-              class="font-inter text-lg text-neutral-700 text-shadow-sm tracking-tight"
-            >
-              Field Title
-            </label>
-            <label
-              class="font-inter text-lg text-neutral-700 text-shadow-sm tracking-tight"
-            >
-              Field Title
-            </label>
-            <label
-              class="font-inter text-lg text-neutral-700 text-shadow-sm tracking-tight"
-            >
-              Field Title
-            </label>
-            <label
-              class="font-inter text-lg text-neutral-700 text-shadow-sm tracking-tight"
-            >
-              Field Title
-            </label>
-            <button
-              class="px-4 py-1 mt-2 border drop-shadow border-neutral-700 rounded-xl font-inter text-neutral-700 font-bold w-1/4 mx-auto hover:bg-neutral-700 hover:text-white hover:border-stone-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
-            >
-              Send
-            </button>
+          <form name="contact" method="post" data-netlify="true" class="my-8">
+            <div class="flex flex-col md:flex-row gap-2 mb-4">
+              <div class="w-full md:w-1/2">
+                <label for="naam"
+                  >Naam
+                  <span class="font-inter text-red-700" aria-hidden="true"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  name="naam"
+                  id="naam"
+                  class="px-1 border w-full border-gray-300 rounded-lg user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  required
+                />
+              </div>
+              <div class="w-full md:w-1/2">
+                <label for="email"
+                  >E-mail
+                  <span class="text-red-700" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  aria-describedby="email-hulp"
+                  required
+                  autocomplete="email"
+                  class="px-1 peer border border-gray-300 user-invalid:border-red-700 w-full rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                />
+                <p id="email-hulp" class="font-inter text-sm text-neutral-700">
+                  Vul een e-mailadres in zoals naam@voorbeeld.be.
+                </p>
+                <p
+                  class="font-inter mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block"
+                >
+                  Dit e-mailadres klopt niet. Vul het in zoals
+                  naam@voorbeeld.be.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-2 mb-2">
+              <div class="w-full md:w-1/2">
+                <label for="gsm">Gsm-nummer</label>
+                <input
+                  type="tel"
+                  name="gsm"
+                  id="gsm"
+                  aria-describedby="gsm-hulp"
+                  autocomplete="tel"
+                  class="px-1 peer border border-gray-300 user-invalid:border-red-700 w-full rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  pattern="04[0-9]{8}"
+                />
+                <p id="gsm-hulp" class="font-inter text-sm text-neutral-700">
+                  Niet verplicht. Tien cijfers zonder spaties, bijvoorbeeld
+                  0412345678.
+                </p>
+                <p
+                  class="font-inter mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block"
+                >
+                  Dit nummer klopt niet. Schrijf het zonder spaties: 0412345678.
+                </p>
+              </div>
+              <div class="w-full md:w-1/2">
+                <label for="onderwerp">Onderwerp</label>
+                <select
+                  name="onderwerp"
+                  id="onderwerp"
+                  class="px-1 peer border border-gray-300 user-invalid:border-red-700 w-full rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                >
+                  <option value="" class="font-inter text-neutral-700">
+                    Maak een keuze
+                  </option>
+                  <option value="Stage" class="font-inter text-neutral-700">
+                    Stage
+                  </option>
+                  <option value="Project" class="font-inter text-neutral-700">
+                    Project
+                  </option>
+                  <option value="Vraag" class="font-inter text-neutral-700">
+                    Een vraag
+                  </option>
+                </select>
+              </div>
+            </div>
+            <fieldset class="border border-gray-300 py-2 px-5 my-4">
+              <legend class="px-2 font-inter text-neutral-700">
+                Hoe wil je antwoord krijgen?
+              </legend>
+              <div class="flex items-center gap-2 mb-1">
+                <input
+                  type="radio"
+                  name="reply"
+                  id="reply_email"
+                  class="size-5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  checked
+                /><label for="reply_email" class="font-inter text-neutral-700"
+                  >per e-mail</label
+                >
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <input
+                  type="radio"
+                  name="reply"
+                  id="reply_tel"
+                  class="size-5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                />
+                <label for="reply_tel" class="font-inter text-neutral-700"
+                  >per telefoon</label
+                >
+              </div>
+            </fieldset>
+            <div class="mb-8">
+              <label for="bericht"
+                >Je bericht
+                <span class="text-red-700" aria-hidden="true">*</span></label
+              >
+              <textarea
+                name="bericht"
+                id="bericht"
+                class="px-1 peer border border-gray-300 user-invalid:border-red-700 w-full rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                aria-describedby="bericht-hulp"
+                required
+                minlength="10"
+                rows="5"
+              ></textarea>
+              <p id="bericht-hulp" class="font-inter text-sm text-neutral-700">
+                Schrijf minstens tien tekens.
+              </p>
+              <p
+                class="font-inter mt-1 hidden text-sm font-semibold text-red-700 peer-user-invalid:block"
+              >
+                Je bericht is te kort. Schrijf minstens tien tekens.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <input
+                type="checkbox"
+                name="toestemming"
+                id="toestemming"
+                class="size-5 user-invalid:border-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                required
+              />
+              <label for="toestemming" class="font-inter text-neutral-700"
+                >Ik ga akkoord met de
+                <a
+                  href=""
+                  class="font-inter text-neutral-700 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  >privacy</a
+                >
+                overeenkomst.
+                <span class="text-red-700" aria-hidden="true">*</span></label
+              >
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 mb-2"
+              >
+                Verstuur
+              </button>
+            </div>
           </form>
         </main>
         <aside
