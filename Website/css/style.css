@@ -1,0 +1,190 @@
+/* De moeizame copy, paste & adjust heb ik hier met behulp van AI overgeslagen. De rest is zelf gekozen en geschreven. 
+- Ferre */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineThin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineThinItalic.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineLight.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineLightItalic.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadline.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineItalic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineMedium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineMediumItalic.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineBold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineBoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineBlack.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineBlackItalic.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraBlack.ttf")
+    format("truetype");
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("../assets/fonts/futura-now-headline/FuturaNowHeadlineExtraBlackItalic.ttf")
+    format("truetype");
+  font-weight: 950;
+  font-style: italic;
+  font-display: swap;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-futura {
+  font-family: "Futura Now Headline", sans-serif;
+}
