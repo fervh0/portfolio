@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Ferre Van Hees</title>
+    <meta
+      name="description"
+      content="De portfolio website van Ferre Van Hees, student systeem- en netwerkbeheer aan de AP Hogeschool. Bekijk mijn projecten of neem contact op."
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="max-w-6xl mx-auto px-4">
+      <header
+        class="flex flex-wrap items-center justify-end sm:justify-center gap-4 py-6"
+      >
+        <input type="checkbox" id="menu-knop" class="peer sr-only" />
+        <label
+          for="menu-knop"
+          class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focus- visible:outline-2 sm:hidden hover:border-gray-400"
+        >
+          <span class="sr-only">Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </label>
+        <nav
+          aria-label="Hoofdmenu"
+          class="hidden w-full peer-checked:block sm:block sm:w-auto"
+        >
+          <ul
+            class="flex flex-col sm:flex-row gap-6 font-semibold font-inter text-sm items-center"
+          >
+            <li
+              class="rounded-xl bg-neutral-700 text-white hover:bg-neutral-300 hover:text-black"
+            >
+              <a
+                href="index.html"
+                aria-current="page"
+                class="flex gap-2 items-center px-4 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Home
+              </a>
+            </li>
+            <li class="rounded-xl hover:bg-neutral-700 hover:text-white">
+              <a
+                href="#about"
+                class="block py-2 px-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                >About me</a
+              >
+            </li>
+            <li class="rounded-xl hover:bg-neutral-700 hover:text-white">
+              <a
+                href="portfolio.html"
+                class="block py-2 px-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                >Projects</a
+              >
+            </li>
+            <li class="rounded-xl hover:bg-neutral-700 hover:text-white">
+              <a
+                href="contact.html"
+                class="block py-2 px-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="md:grid grid-cols-2">
+        <div class="mx-auto w-full max-w-5xl px-4">
+          <div
+            class="relative isolate h-64 overflow-hidden border border-neutral-900 bg-neutral-100 sm:h-80 md:h-96"
+          >
+            <img
+              src="assets/images/placeholder1.png"
+              alt="Foto 1"
+              class="absolute left-[-3%] top-[-10%] z-10 h-[125%] w-[32%] -rotate-[8deg] object-cover shadow-lg"
+            />
+
+            <img
+              src="assets/images/placeholder1.png"
+              alt="Foto 2"
+              class="absolute left-[23%] top-[-15%] z-20 h-[130%] w-[34%] rotate-[15deg] object-cover shadow-lg"
+            />
+
+            <img
+              src="assets/images/placeholder1.png"
+              alt="Foto 3"
+              class="absolute left-[48%] top-[-8%] z-30 h-[125%] w-[33%] -rotate-[12deg] object-cover shadow-lg"
+            />
+
+            <img
+              src="assets/images/placeholder1.png"
+              alt="Foto 4"
+              class="absolute left-[76%] top-[-6%] z-40 h-[120%] w-[29%] -rotate-[5deg] object-cover shadow-lg"
+            />
+          </div>
+        </div>
+        <main>
+          <section id="about">
+            <h1 class="py-4 text-4xl font-bold font-futura text-neutral-700">
+              Hey, ik ben Ferre.
+            </h1>
+            <p class="py-4 font-inter">
+              Ik ben 21 jaar en volg de graduaatsopleiding Systeem &amp;
+              Netwerkbeheer aan AP Hogeschool Antwerpen. Met die technische
+              achtergrond wil ik later aan de slag als cyberonderzoeker bij de
+              politie. Eerst wil ik inspecteur worden en enkele jaren ervaring
+              opdoen op straat, om daarna met mijn IT-diploma de interne
+              opleiding tot cyberonderzoeker te volgen.
+            </p>
+            <p class="py-4 font-inter">
+              Naast mijn studies werk ik als barman in restaurant Le Petit
+              Boeuf, waar ik veel met mensen in contact kom en het op drukke
+              momenten flink doorwerken is. Buiten mijn werk en studies maak ik
+              elke dag tijd om te sporten. Ik wissel lopen, zwemmen, fietsen en
+              fitness af en liep onlangs mijn eerste marathon.
+            </p>
+            <h2 class="pt-4 text-xl font-futura font-bold text-neutral-700">
+              Wat ik kan:
+            </h2>
+            <ul class="flex flex-wrap gap-2 py-4">
+              <li
+                class="py-1 px-4 bg-neutral-700 text-white font-light text-sm font-inter rounded-2xl"
+              >
+                Python
+              </li>
+              <li
+                class="py-1 px-4 bg-neutral-700 text-white font-light text-sm font-inter rounded-2xl"
+              >
+                SQL
+              </li>
+              <li
+                class="py-1 px-4 bg-neutral-700 text-white font-light text-sm font-inter rounded-2xl"
+              >
+                Networking
+              </li>
+              <li
+                class="py-1 px-4 bg-neutral-700 text-white font-light text-sm font-inter rounded-2xl"
+              >
+                3D Modeling & Painting
+              </li>
+              <li
+                class="py-1 px-4 bg-neutral-700 text-white font-light text-sm font-inter rounded-2xl"
+              >
+                Skill 5
+              </li>
+            </ul>
+          </section>
+        </main>
+        <aside class="flex flex-col justify-center items-center py-4">
+          <div class="mb-3">
+            <figure
+              class="flex border border-stone-300 aspect-square w-2/3 rounded-lg overflow-hidden mx-auto"
+            >
+              <img
+                src="assets/images/placeholder2.png"
+                width="1254"
+                height="1254"
+                alt="Foto van een bos met bergen"
+                class="object-cover w-1/3 h-full"
+              />
+              <img
+                src="assets/images/placeholder2.png"
+                width="1254"
+                height="1254"
+                alt="Foto van een bos met bergen"
+                class="object-cover w-1/3 h-full"
+              />
+              <img
+                src="assets/images/placeholder2.png"
+                width="1254"
+                height="1254"
+                alt="Foto van een bos met bergen"
+                class="object-cover w-1/3 h-full"
+              />
+            </figure>
+          </div>
+          <a
+            href="portfolio.html"
+            class="block py-2 px-4 border border-neutral-700 text-neutral-700 rounded-2xl font-inter font-semibold text-medium hover:bg-neutral-700 hover:text-white hover:border-stone-300 max-w-2/3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            >Check out my projects</a
+          >
+        </aside>
+      </div>
+      <footer
+        class="grid grid-cols-1 items-end gap-4 border-t border-gray-200 mt-6 py-4 sm:grid-cols-3"
+      >
+        <p class="text-center sm:col-start-2">
+          <a
+            href="contact.html"
+            class="block py-3 px-6 border border-neutral-700 font-inter font-semibold text-neutral-700 text-sm drop-shadow hover:text-white hover:bg-neutral-700 hover:border-stone-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            >Let's Connect</a
+          >
+        </p>
+        <div class="text-center leading-tight sm:col-start-3 sm:text-right">
+          <p class="font-inter text-xs">&copy; 2026 Ferre Van Hees</p>
+          <p class="font-inter text-xs">All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
